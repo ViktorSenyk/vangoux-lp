@@ -35,6 +35,7 @@
     font-size: 14px;
     font-weight: 700;
     text-shadow: $text-shadow;
+    text-transform: uppercase;
     cursor: pointer;
   }
 }
@@ -47,7 +48,7 @@
   & > p {
     font-size: 20px;
     font-weight: 600;
-    margin-left: 10px;
+    margin-left: 17px;
     color: $color-blue;
   }
 }
