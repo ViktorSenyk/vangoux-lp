@@ -1,0 +1,53 @@
+.header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+  &__links-wrap {
+    width: 540px;
+    display: flex;
+    margin-right: 20px;
+  }
+  &__link {
+    & > a {
+      display: block;
+      width: 120px;
+      line-height: 50px;
+      text-align: center;
+      color: $color-dark;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    &:last-child > a {
+      width: 180px;
+    }
+  }
+  &__button {
+    width: 180px;
+    height: 50px;
+    border: none;
+    background-color: $color-blue;
+    color: $color-light;
+    box-shadow: $boxShadow-button;
+    font-size: 14px;
+    font-weight: 700;
+    text-shadow: $text-shadow;
+    cursor: pointer;
+  }
+}
+
+.logo {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  & > p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+    color: $color-blue;
+  }
+}

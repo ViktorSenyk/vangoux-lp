@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    text-decoration: none;
+}
 .container {
     max-width: 1440px;
     margin: 0 auto;
+    padding: 30px 160px 40px;
     min-height: 100vh;
     background: url(../images/body-background-decor.png);
 }
+@import 'variables';
+@import 'header';
