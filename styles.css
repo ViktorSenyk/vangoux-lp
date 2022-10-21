@@ -1,0 +1,8 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: url(../images/body-background-decor.png);
+}
+
+/*# sourceMappingURL=styles.css.map */
