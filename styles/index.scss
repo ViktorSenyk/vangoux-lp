@@ -14,6 +14,8 @@
     min-height: 100vh;
     background: url(../images/body-background-decor.png);
 }
+@import 'common';
 @import 'header';
 @import 'headline';
 @import 'reviews';
+@import 'workflow';
