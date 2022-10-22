@@ -1,0 +1,36 @@
+.users {
+    margin-top: 120px;
+    &__title {
+        @extend .workflow__title;
+    }
+    &__cards-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+}
+
+.user-card {
+    width: 360px;
+    height: 160px;
+    padding: 20px;
+    background-color: $color-light;
+    box-shadow: $boxShadow-main;
+    &_extra-margin {
+        margin-top: 20px;
+    }
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: $color-blue;
+        margin-bottom: 20px;
+    }
+    &__description {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+}
