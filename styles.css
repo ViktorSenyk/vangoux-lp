@@ -155,14 +155,14 @@
 .workflow {
   margin-top: 120px;
 }
-.workflow__title, .users__title, .features__title {
+.workflow__title, .purposes__title, .users__title, .features__title {
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 400;
   line-height: 60px;
   position: relative;
 }
-.workflow__title::before, .users__title::before, .features__title::before {
+.workflow__title::before, .purposes__title::before, .users__title::before, .features__title::before {
   content: "";
   display: block;
   width: 80px;
@@ -290,7 +290,7 @@
 .users {
   margin-top: 120px;
 }
-.users__cards-wrap {
+.users__cards-wrap, .purposes__cards-wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -303,6 +303,7 @@
   padding: 20px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+  cursor: pointer;
 }
 .user-card_extra-margin {
   margin-top: 20px;
@@ -319,6 +320,28 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
+}
+
+.purposes {
+  margin-top: 120px;
+}
+.purposes-card {
+  width: 540px;
+  height: 80px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+  cursor: pointer;
+  display: flex;
+}
+.purposes-card_extra-margin {
+  margin-top: 40px;
+}
+.purposes-card__title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 80px;
+  color: rgb(0, 0, 0);
+  padding-left: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

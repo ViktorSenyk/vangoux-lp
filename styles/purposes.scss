@@ -1,0 +1,28 @@
+.purposes {
+  margin-top: 120px;
+  &__title {
+    @extend .workflow__title;
+  }
+  &__cards-wrap {
+    @extend .users__cards-wrap;
+  }
+}
+
+.purposes-card {
+  width: 540px;
+  height: 80px;
+  background-color: $color-light;
+  box-shadow: $boxShadow-main;
+  cursor: pointer;
+  display: flex;
+  &_extra-margin {
+    margin-top: 40px;
+  }
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 80px;
+    color: $color-dark;
+    padding-left: 20px;
+  }
+}
