@@ -155,14 +155,14 @@
 .workflow {
   margin-top: 120px;
 }
-.workflow__title {
+.workflow__title, .features__title {
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 400;
   line-height: 60px;
   position: relative;
 }
-.workflow__title::before {
+.workflow__title::before, .features__title::before {
   content: "";
   display: block;
   width: 80px;
@@ -179,7 +179,7 @@
   margin-top: 50px;
 }
 
-.steps-card {
+.steps-card, .features-card {
   max-width: 320px;
   height: 220px;
   padding: 40px;
@@ -215,7 +215,7 @@
   left: -75px;
   z-index: -5;
 }
-.steps-card::after {
+.steps-card::after, .features-card::after {
   content: "";
   display: block;
   width: 25px;
@@ -249,6 +249,42 @@
   top: 42px;
   right: 40px;
   cursor: pointer;
+}
+
+.features {
+  margin-top: 120px;
+}
+.features__steps-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.features-card {
+  height: 290px;
+  padding: 0;
+}
+.features-card_middle {
+  margin-top: 40px;
+}
+.features-card_bottom {
+  margin-top: 80px;
+}
+.features-card__top-wrap {
+  display: flex;
+}
+.features-card__title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  padding: 31px 20px 20px;
+  background-color: rgb(243, 247, 255);
+}
+.features-card__description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */
