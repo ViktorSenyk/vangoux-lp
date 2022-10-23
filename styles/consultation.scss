@@ -45,3 +45,18 @@
     right: 1px;
   }
 }
+
+@media screen and (max-width: 1416px) {
+  .consultation {
+    margin-top: 60px;
+    padding: 60px;
+    width: 640px;
+    left: -50px;
+    &__content-wrap {
+      margin-top: 50px;
+    }
+    &__banner {
+      display: none;
+    }
+  }
+}

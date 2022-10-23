@@ -37,3 +37,42 @@
     padding: 40px;
   }
 }
+
+@media screen and (max-width: 1416px) {
+  .features {
+    margin-top: 125px;
+    padding: 0 10px;
+    &__title {
+      @extend .workflow__title;
+    }
+    &__steps-wrap {
+      display: block;
+    }
+  }
+
+  .features-card {
+    @extend .steps-card;
+    height: 200px;
+    &_middle {
+      margin-top: 60px;
+    }
+    &_bottom {
+      margin-top: 60px;
+    }
+    &__top-wrap {
+      display: flex;
+    }
+    &__banner {
+      width: 80px;
+      height: 80px;
+    }
+    &__title {
+      width: 100%;
+      line-height: 80px;
+      padding: 0 0 0 20px;
+    }
+    &__description {
+      padding: 30px 40px;
+    }
+  }
+}

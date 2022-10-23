@@ -1,37 +1,69 @@
 .users {
-    margin-top: 120px;
-    &__title {
-        @extend .workflow__title;
+  margin-top: 120px;
+  &__title {
+    @extend .workflow__title;
+    &_mobile {
+      @extend .workflow__title;
+      display: none;
     }
-    &__cards-wrap {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 50px;
-    }
+  }
+  &__cards-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
 }
 
 .user-card {
-    width: 360px;
-    height: 160px;
-    padding: 20px;
-    background-color: $color-light;
-    box-shadow: $boxShadow-main;
-    cursor: pointer;
-    &_extra-margin {
-        margin-top: 20px;
-    }
+  width: 360px;
+  height: 160px;
+  padding: 20px;
+  background-color: $color-light;
+  box-shadow: $boxShadow-main;
+  cursor: pointer;
+  &_extra-margin {
+    margin-top: 20px;
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: $color-blue;
+    margin-bottom: 20px;
+  }
+  &__description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 1416px) {
+  .users {
+    margin-top: 125px;
+    padding: 0 10px;
     &__title {
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 40px;
-        text-transform: uppercase;
-        color: $color-blue;
-        margin-bottom: 20px;
+      display: none;
+      &_mobile {
+        display: block;
+      }
     }
-    &__description {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 30px;
+    &__cards-wrap {
+      margin-top: 40px;
     }
+  }
+
+  .user-card {
+    width: 250px;
+    height: 190px;
+    &:nth-child(3),
+    &:nth-child(4) {
+      margin: 20px 0;
+    }
+    &_extra-margin {
+      margin-top: 0;
+    }
+  }
 }

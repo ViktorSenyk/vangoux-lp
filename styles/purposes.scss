@@ -26,3 +26,28 @@
     padding-left: 20px;
   }
 }
+
+@media screen and (max-width: 1416px) {
+  .purposes {
+    padding: 0 10px;
+    &__title {
+      @extend .workflow__title;
+    }
+    &__cards-wrap {
+      display: block;
+      margin-top: 50px;
+    }
+  }
+
+  .purposes-card {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &_extra-margin {
+      margin-top: 0;
+    }
+  }
+}

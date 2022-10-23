@@ -40,6 +40,14 @@
   }
 }
 
+@media screen and (max-width: 1416px) {
+  .header {
+    padding-left: 30px;
+    &__nav {
+      display: none;
+    }
+  }
+}
 .logo {
   height: 50px;
   display: flex;

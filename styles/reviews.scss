@@ -1,44 +1,55 @@
 .reviews {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 160px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 160px;
 }
 
 .review-card {
-    position: relative;
-    max-width: 540px;
-    padding: 40px;
-    background-color: $color-light;
-    box-shadow: $boxShadow-main;
-    cursor: pointer;
-    &__wrap {
-        height: 100px;
-    }
-    &__avatar {
-        float: left;
-        margin: -20px 20px 0 0;
-    }
-    &__name {
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 30px;
-        margin-top: 20px;
-    }
-    &__position {
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 30px;
-        color: $color-blue;
-    }
-    &__comment {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 30px;
-        margin-top: 20px;
-    }
-    &__banner {
-        position: absolute;
-        top: 37px;
-        right: 31px;
-    }
+  position: relative;
+  max-width: 540px;
+  padding: 40px;
+  background-color: $color-light;
+  box-shadow: $boxShadow-main;
+  cursor: pointer;
+  &__wrap {
+    height: 100px;
+  }
+  &__avatar {
+    float: left;
+    margin: -20px 20px 0 0;
+  }
+  &__name {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-top: 20px;
+  }
+  &__position {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 30px;
+    color: $color-blue;
+  }
+  &__comment {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 20px;
+  }
+  &__banner {
+    position: absolute;
+    top: 37px;
+    right: 31px;
+  }
+}
+
+@media screen and (max-width: 1416px) {
+  .reviews {
+    display: block;
+    margin-top: 50px;
+  }
+
+  .review-card {
+    margin-bottom: 50px;
+  }
 }
