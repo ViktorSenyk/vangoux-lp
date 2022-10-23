@@ -9,7 +9,7 @@
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 30px 160px 40px;
+  padding: 30px 160px 0;
   min-height: 100vh;
   background: url(../images/body-background-decor.png) no-repeat;
 }
@@ -63,7 +63,7 @@
 .logo > p {
   font-size: 20px;
   font-weight: 600;
-  margin-left: 17px;
+  padding: 0 17px 0 17px;
   color: rgb(25, 104, 252);
 }
 
@@ -426,6 +426,59 @@
 }
 .stories-card__link {
   text-decoration: underline;
+}
+
+.footer {
+  margin-top: 120px;
+  min-height: 130px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(251, 251, 251);
+  position: relative;
+  width: 1440px;
+  left: -160px;
+  overflow: hidden;
+  padding: 0 160px;
+}
+.footer__logo > p {
+  background-color: rgba(25, 104, 252, 0.05);
+  line-height: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0 18px 0 19px;
+}
+.footer__nav {
+  display: flex;
+  height: 50px;
+  margin-left: 70px;
+}
+.footer__links-wrap {
+  display: flex;
+}
+.footer__link > a {
+  display: block;
+  width: 120px;
+  line-height: 50px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 600;
+}
+.footer__icons-wrap {
+  margin-left: 50px;
+  display: flex;
+}
+.footer__icon > a {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.footer__banner {
+  position: absolute;
+  right: 136px;
+  bottom: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -10,7 +10,7 @@
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 30px 160px 40px;
+    padding: 30px 160px 0;
     min-height: 100vh;
     background: url(../images/body-background-decor.png) no-repeat;
 }
@@ -24,3 +24,4 @@
 @import 'purposes';
 @import 'consultation';
 @import 'stories';
+@import 'footer';

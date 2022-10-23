@@ -1,0 +1,58 @@
+.footer {
+  margin-top: 120px;
+  min-height: 130px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(251, 251, 251, 1);
+  position: relative;
+  width: 1440px;
+  left: -160px;
+  overflow: hidden;
+  padding: 0 160px;
+  &__logo {
+    & > p {
+      background-color: rgba(25, 104, 252, 0.05);
+      line-height: 50px;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 0 18px 0 19px;
+    }
+  }
+  &__nav {
+    display: flex;
+    height: 50px;
+    margin-left: 70px;
+  }
+  &__links-wrap {
+    display: flex;
+  }
+  &__link {
+    & > a {
+      display: block;
+      width: 120px;
+      line-height: 50px;
+      text-align: center;
+      color: $color-dark;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+  &__icons-wrap {
+    margin-left: 50px;
+    display: flex;
+  }
+  &__icon {
+    & > a {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+  &__banner {
+    position: absolute;
+    right: 136px;
+    bottom: 0;
+  }
+}
