@@ -15,7 +15,7 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 1416px) {
+@media screen and (max-width: 1316px) {
   .container {
     width: 640px;
     padding: 40px 50px 0;
@@ -61,7 +61,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1416px) {
+@media screen and (max-width: 1316px) {
   .header {
     padding-left: 30px;
   }
@@ -128,7 +128,7 @@
   display: none;
 }
 
-@media screen and (max-width: 1416px) {
+@media screen and (max-width: 1316px) {
   .headline {
     margin-top: 80px;
   }
@@ -211,7 +211,7 @@
   right: 31px;
 }
 
-@media screen and (max-width: 1416px) {
+@media screen and (max-width: 1316px) {
   .reviews {
     display: block;
     margin-top: 50px;
@@ -319,7 +319,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1416px) {
+@media screen and (max-width: 1316px) {
   .workflow {
     padding: 0 10px;
   }
@@ -390,7 +390,7 @@
   padding: 40px;
 }
 
-@media screen and (max-width: 1416px) {
+@media screen and (max-width: 1316px) {
   .features {
     margin-top: 125px;
     padding: 0 10px;
@@ -461,7 +461,7 @@
   line-height: 30px;
 }
 
-@media screen and (max-width: 1416px) {
+@media screen and (max-width: 1316px) {
   .users {
     margin-top: 125px;
     padding: 0 10px;
@@ -508,7 +508,7 @@
   padding-left: 20px;
 }
 
-@media screen and (max-width: 1416px) {
+@media screen and (max-width: 1316px) {
   .purposes {
     padding: 0 10px;
   }
@@ -575,7 +575,7 @@
   right: 1px;
 }
 
-@media screen and (max-width: 1416px) {
+@media screen and (max-width: 1316px) {
   .consultation {
     margin-top: 60px;
     padding: 60px;
@@ -626,7 +626,7 @@
   text-decoration: underline;
 }
 
-@media screen and (max-width: 1416px) {
+@media screen and (max-width: 1316px) {
   .stories {
     margin-top: 60px;
     padding: 0 10px;
@@ -697,7 +697,7 @@
   bottom: 0;
 }
 
-@media screen and (max-width: 1416px) {
+@media screen and (max-width: 1316px) {
   .footer {
     margin-top: 60px;
     width: 640px;
