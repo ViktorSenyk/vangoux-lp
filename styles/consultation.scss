@@ -1,12 +1,13 @@
 .consultation {
-  margin-top: 120px;
   position: relative;
+  left: -160px;
+  width: 1440px;
   min-height: 450px;
+  overflow: hidden;
   background-color: $color-blue;
   padding: 80px 160px;
-  width: 1440px;
-  left: -160px;
-  overflow: hidden;
+  margin-top: 120px;
+
   &__title {
     @extend .workflow__title;
     font-weight: 700;
@@ -20,8 +21,8 @@
     margin-top: 60px;
   }
   &__description {
-    font-size: 20px;
     max-width: 625px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 40px;
     color: $color-light;
@@ -30,12 +31,12 @@
   &__button {
     width: 320px;
     height: 50px;
-    background-color: $color-light;
-    color: $color-blue;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
     border: none;
+    background-color: $color-light;
+    color: $color-blue;
     box-shadow: 4px 4px 20px rgba(255, 255, 255, 0.4);
     cursor: pointer;
   }
@@ -46,12 +47,12 @@
   }
 }
 
-@media screen and (max-width: 1416px) {
+@include small-screen {
   .consultation {
-    margin-top: 60px;
-    padding: 60px;
-    width: 640px;
     left: -50px;
+    width: 640px;
+    padding: 60px;
+    margin-top: 60px;
     &__content-wrap {
       margin-top: 50px;
     }

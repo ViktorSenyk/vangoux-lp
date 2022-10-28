@@ -1,21 +1,21 @@
 .footer {
-  margin-top: 120px;
-  min-height: 130px;
-  display: flex;
-  align-items: center;
-  background-color: rgba(251, 251, 251, 1);
   position: relative;
-  width: 1440px;
   left: -160px;
-  overflow: hidden;
-  padding: 0 160px;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 1440px;
+  min-height: 130px;
+  overflow: hidden;
+  background-color: rgba(251, 251, 251, 1);
+  padding: 0 160px;
+  margin-top: 120px;
   &__logo {
     & > p {
-      background-color: rgba(25, 104, 252, 0.05);
-      line-height: 50px;
       font-size: 14px;
       font-weight: 600;
+      line-height: 50px;
+      background-color: rgba(25, 104, 252, 0.05);
       padding: 0 18px 0 19px;
     }
   }
@@ -30,27 +30,27 @@
     & > a {
       display: block;
       width: 120px;
-      line-height: 50px;
       text-align: center;
-      color: $color-dark;
       font-size: 14px;
       font-weight: 600;
+      line-height: 50px;
+      color: $color-dark;
     }
   }
   &__icons-wrap {
-    margin-left: 50px;
     display: flex;
     margin-right: 170px;
+    margin-left: 50px;
   }
   &__icon {
     & > a {
-      display: flex;
-      width: 50px;
-      height: 50px;
-      justify-content: center;
-      align-items: center;
       position: relative;
       z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
     }
   }
   &__banner {
@@ -60,13 +60,13 @@
   }
 }
 
-@media screen and (max-width: 1416px) {
+@include small-screen {
   .footer {
-    margin-top: 60px;
-    width: 640px;
     left: -50px;
-    padding: 0 40px;
     justify-content: start;
+    width: 640px;
+    padding: 0 40px;
+    margin-top: 60px;
     &__links-wrap {
       display: none;
     }
@@ -74,9 +74,9 @@
       margin: 0 0 0 50px;
     }
     &__banner {
+      right: 27px;
       width: 78px;
       height: 66px;
-      right: 27px;
     }
   }
 }

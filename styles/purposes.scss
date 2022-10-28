@@ -9,12 +9,12 @@
 }
 
 .purposes-card {
+  display: flex;
   width: 540px;
   height: 80px;
   background-color: $color-light;
   box-shadow: $boxShadow-main;
   cursor: pointer;
-  display: flex;
   &_extra-margin {
     margin-top: 40px;
   }
@@ -27,7 +27,7 @@
   }
 }
 
-@media screen and (max-width: 1416px) {
+@include small-screen {
   .purposes {
     padding: 0 10px;
     &__title {

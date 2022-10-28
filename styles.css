@@ -1,18 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap");
 * {
   box-sizing: border-box;
+}
+
+html {
   font-family: "Mulish", sans-serif;
+  text-decoration: none;
+  color: rgb(17, 34, 63);
+}
+
+button {
+  font-family: "Mulish", sans-serif;
+}
+
+a {
   text-decoration: none;
   color: rgb(17, 34, 63);
 }
 
 .container {
   max-width: 1440px;
-  margin: 0 auto;
-  padding: 30px 160px 0;
   min-height: 100vh;
-  background: url(./images/body-background-decor.png) no-repeat;
   overflow: hidden;
+  background: url(./images/body-background-decor.png) no-repeat;
+  padding: 30px 160px 0;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1416px) {
@@ -22,27 +34,27 @@
   }
 }
 .header {
-  height: 50px;
   display: flex;
   justify-content: space-between;
+  height: 50px;
 }
 .header__nav {
   display: flex;
   align-items: center;
 }
 .header__links-wrap {
-  width: 540px;
   display: flex;
+  width: 540px;
   margin-right: 20px;
 }
 .header__link > a {
   display: block;
   width: 120px;
-  line-height: 50px;
   text-align: center;
-  color: rgb(0, 0, 0);
   font-size: 14px;
   font-weight: 600;
+  line-height: 50px;
+  color: rgb(0, 0, 0);
 }
 .header__link:last-child > a {
   width: 180px;
@@ -50,14 +62,14 @@
 .header__button {
   width: 180px;
   height: 50px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
   border: none;
   background-color: rgb(25, 104, 252);
   color: rgb(255, 255, 255);
-  box-shadow: 0px 10px 40px rgba(25, 104, 252, 0.3);
-  font-size: 14px;
-  font-weight: 700;
   text-shadow: 0px 10px 40px rgba(25, 104, 252, 0.2);
-  text-transform: uppercase;
+  box-shadow: 0px 10px 40px rgba(25, 104, 252, 0.3);
   cursor: pointer;
 }
 
@@ -70,26 +82,26 @@
   }
 }
 .logo {
-  height: 50px;
   display: flex;
   align-items: center;
+  height: 50px;
   cursor: pointer;
 }
 .logo > p {
   font-size: 20px;
   font-weight: 600;
-  padding: 0 17px 0 17px;
   color: rgb(25, 104, 252);
+  padding: 0 17px 0 17px;
 }
 
 .headline {
-  margin-top: 150px;
   position: relative;
+  margin-top: 150px;
 }
 .headline__wrap {
-  max-width: 600px;
   position: relative;
   z-index: 2;
+  max-width: 600px;
 }
 .headline__title {
   font-size: 40px;
@@ -106,14 +118,14 @@
 .headline__button, .headline__button_mobile {
   width: 300px;
   height: 50px;
-  background-color: rgb(25, 104, 252);
-  color: rgb(255, 255, 255);
-  box-shadow: 0px 10px 40px rgba(25, 104, 252, 0.3);
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
-  text-shadow: 0px 10px 40px rgba(25, 104, 252, 0.2);
   border: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(25, 104, 252);
+  box-shadow: 0px 10px 40px rgba(25, 104, 252, 0.3);
+  text-shadow: 0px 10px 40px rgba(25, 104, 252, 0.2);
   cursor: pointer;
 }
 .headline__button_mobile {
@@ -121,8 +133,8 @@
 }
 .headline__banner {
   position: absolute;
-  right: 0;
   top: 50px;
+  right: 0;
 }
 .headline__mobile-warning {
   display: none;
@@ -148,22 +160,22 @@
     margin-top: 104px;
   }
   .headline__mobile-warning {
+    position: relative;
+    left: -50px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 640px;
     height: 180px;
-    background: url(./images/headline-mobile-warning-background.png);
-    position: relative;
-    left: -50px;
-    margin-top: -41px;
+    text-align: center;
+    text-transform: uppercase;
     font-size: 20px;
     font-weight: 700;
     line-height: 40px;
     color: rgb(255, 255, 255);
-    text-transform: uppercase;
+    background: url(./images/headline-mobile-warning-background.png);
     padding: 30px 60px;
-    text-align: center;
+    margin-top: -41px;
   }
 }
 .reviews {
@@ -175,9 +187,9 @@
 .review-card {
   position: relative;
   max-width: 540px;
-  padding: 40px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+  padding: 40px;
   cursor: pointer;
 }
 .review-card__wrap {
@@ -224,22 +236,22 @@
   margin-top: 120px;
 }
 .workflow__title, .stories__title, .consultation__title, .purposes__title, .users__title_mobile, .users__title, .features__title {
+  position: relative;
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 400;
   line-height: 60px;
-  position: relative;
 }
 .workflow__title::before, .stories__title::before, .consultation__title::before, .purposes__title::before, .users__title_mobile::before, .users__title::before, .features__title::before {
   content: "";
+  position: absolute;
+  bottom: -12px;
+  left: -40px;
   display: block;
   width: 80px;
   height: 2px;
   background-color: rgb(25, 104, 252);
   box-shadow: 0px 2px 0px #d1e1fe;
-  position: absolute;
-  bottom: -12px;
-  left: -40px;
 }
 .workflow__steps-wrap {
   display: flex;
@@ -248,50 +260,50 @@
 }
 
 .steps-card, .features-card {
+  position: relative;
   max-width: 320px;
   height: 220px;
-  padding: 40px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+  padding: 40px;
   cursor: pointer;
-  position: relative;
 }
 .steps-card_middle {
-  margin-top: 40px;
   position: relative;
+  margin-top: 40px;
 }
 .steps-card_middle::before {
   content: "";
-  display: block;
-  width: 70px;
-  border: 1px dashed rgb(25, 104, 252);
   position: absolute;
   top: 70px;
   left: -75px;
   z-index: -5;
+  display: block;
+  width: 70px;
+  border: 1px dashed rgb(25, 104, 252);
 }
 .steps-card_bottom {
   margin-top: 80px;
 }
 .steps-card_bottom::before {
   content: "";
-  display: block;
-  width: 70px;
-  border: 1px dashed rgb(25, 104, 252);
   position: absolute;
   top: 68px;
   left: -75px;
   z-index: -5;
+  display: block;
+  width: 70px;
+  border: 1px dashed rgb(25, 104, 252);
 }
 .steps-card::after, .features-card::after {
   content: "";
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
   display: block;
   width: 25px;
   height: 25px;
   background: url(./images/steps-card-decoration.png);
-  position: absolute;
-  bottom: -5px;
-  right: -5px;
 }
 .steps-card__small-title {
   text-transform: uppercase;
@@ -336,19 +348,19 @@
     padding: 40px;
   }
   .steps-card_middle::before {
-    transform: rotate(90deg);
     top: -5px;
     left: 25px;
+    transform: rotate(90deg);
   }
   .steps-card_bottom {
     margin-top: 40px;
   }
   .steps-card_bottom::before {
-    width: 40px;
-    transform: rotate(90deg);
     top: -20px;
     left: 40px;
+    transform: rotate(90deg);
     z-index: 0;
+    width: 40px;
   }
   .steps-card__description {
     margin-top: 10px;
@@ -380,8 +392,8 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
-  padding: 31px 20px 20px;
   background-color: rgb(243, 247, 255);
+  padding: 31px 20px 20px;
 }
 .features-card__description {
   font-size: 16px;
@@ -392,8 +404,8 @@
 
 @media screen and (max-width: 1416px) {
   .features {
-    margin-top: 125px;
     padding: 0 10px;
+    margin-top: 125px;
   }
   .features__steps-wrap {
     display: block;
@@ -439,19 +451,19 @@
 .user-card {
   width: 360px;
   height: 160px;
-  padding: 20px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+  padding: 20px;
   cursor: pointer;
 }
 .user-card_extra-margin {
   margin-top: 20px;
 }
 .user-card__title {
+  text-transform: uppercase;
   font-size: 20px;
   font-weight: 700;
   line-height: 40px;
-  text-transform: uppercase;
   color: rgb(25, 104, 252);
   margin-bottom: 20px;
 }
@@ -463,8 +475,8 @@
 
 @media screen and (max-width: 1416px) {
   .users {
-    margin-top: 125px;
     padding: 0 10px;
+    margin-top: 125px;
   }
   .users__title {
     display: none;
@@ -490,12 +502,12 @@
   margin-top: 120px;
 }
 .purposes-card {
+  display: flex;
   width: 540px;
   height: 80px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
   cursor: pointer;
-  display: flex;
 }
 .purposes-card_extra-margin {
   margin-top: 40px;
@@ -529,14 +541,14 @@
   }
 }
 .consultation {
-  margin-top: 120px;
   position: relative;
+  left: -160px;
+  width: 1440px;
   min-height: 450px;
+  overflow: hidden;
   background-color: rgb(25, 104, 252);
   padding: 80px 160px;
-  width: 1440px;
-  left: -160px;
-  overflow: hidden;
+  margin-top: 120px;
 }
 .consultation__title {
   font-weight: 700;
@@ -550,8 +562,8 @@
   margin-top: 60px;
 }
 .consultation__description {
-  font-size: 20px;
   max-width: 625px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 40px;
   color: rgb(255, 255, 255);
@@ -560,12 +572,12 @@
 .consultation__button {
   width: 320px;
   height: 50px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(25, 104, 252);
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
   border: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(25, 104, 252);
   box-shadow: 4px 4px 20px rgba(255, 255, 255, 0.4);
   cursor: pointer;
 }
@@ -577,10 +589,10 @@
 
 @media screen and (max-width: 1416px) {
   .consultation {
-    margin-top: 60px;
-    padding: 60px;
-    width: 640px;
     left: -50px;
+    width: 640px;
+    padding: 60px;
+    margin-top: 60px;
   }
   .consultation__content-wrap {
     margin-top: 50px;
@@ -628,8 +640,8 @@
 
 @media screen and (max-width: 1416px) {
   .stories {
-    margin-top: 60px;
     padding: 0 10px;
+    margin-top: 60px;
   }
   .stories__cards-wrap {
     margin-top: 50px;
@@ -642,23 +654,23 @@
   }
 }
 .footer {
-  margin-top: 120px;
-  min-height: 130px;
-  display: flex;
-  align-items: center;
-  background-color: rgb(251, 251, 251);
   position: relative;
-  width: 1440px;
   left: -160px;
-  overflow: hidden;
-  padding: 0 160px;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 1440px;
+  min-height: 130px;
+  overflow: hidden;
+  background-color: rgb(251, 251, 251);
+  padding: 0 160px;
+  margin-top: 120px;
 }
 .footer__logo > p {
-  background-color: rgba(25, 104, 252, 0.05);
-  line-height: 50px;
   font-size: 14px;
   font-weight: 600;
+  line-height: 50px;
+  background-color: rgba(25, 104, 252, 0.05);
   padding: 0 18px 0 19px;
 }
 .footer__nav {
@@ -671,25 +683,25 @@
 .footer__link > a {
   display: block;
   width: 120px;
-  line-height: 50px;
   text-align: center;
-  color: rgb(0, 0, 0);
   font-size: 14px;
   font-weight: 600;
+  line-height: 50px;
+  color: rgb(0, 0, 0);
 }
 .footer__icons-wrap {
-  margin-left: 50px;
   display: flex;
   margin-right: 170px;
+  margin-left: 50px;
 }
 .footer__icon > a {
-  display: flex;
-  width: 50px;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
   position: relative;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
 }
 .footer__banner {
   position: absolute;
@@ -699,11 +711,11 @@
 
 @media screen and (max-width: 1416px) {
   .footer {
-    margin-top: 60px;
-    width: 640px;
     left: -50px;
-    padding: 0 40px;
     justify-content: start;
+    width: 640px;
+    padding: 0 40px;
+    margin-top: 60px;
   }
   .footer__links-wrap {
     display: none;
@@ -712,9 +724,9 @@
     margin: 0 0 0 50px;
   }
   .footer__banner {
+    right: 27px;
     width: 78px;
     height: 66px;
-    right: 27px;
   }
 }
 

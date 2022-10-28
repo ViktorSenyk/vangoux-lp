@@ -7,9 +7,9 @@
 .review-card {
   position: relative;
   max-width: 540px;
-  padding: 40px;
   background-color: $color-light;
   box-shadow: $boxShadow-main;
+  padding: 40px;
   cursor: pointer;
   &__wrap {
     height: 100px;
@@ -43,7 +43,7 @@
   }
 }
 
-@media screen and (max-width: 1416px) {
+@include small-screen {
   .reviews {
     display: block;
     margin-top: 50px;
