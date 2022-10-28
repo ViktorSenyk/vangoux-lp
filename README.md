@@ -1,4 +1,4 @@
-# Layout Sample Project
+# VanGoux
 
 ### [Site link](https://viktorsenyk.github.io/vangoux-lp/)
 
